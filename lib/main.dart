@@ -1,4 +1,4 @@
-import 'package:book_club_app/screens/login/login.dart';
+import 'package:book_club_app/screens/root/root.dart';
 import 'package:book_club_app/states/currentUser.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
@@ -14,7 +14,7 @@ class MyApp extends StatelessWidget {
     return ChangeNotifierProvider(
       create: (context) => CurrentUser(),
           child: MaterialApp(
-        home: MyLogin(),
+        home: MyRoot(),
       ),
     );
   }

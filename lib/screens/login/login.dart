@@ -4,6 +4,8 @@ import 'package:book_club_app/states/currentUser.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 
+import '../home/home.dart';
+
 class MyLogin extends StatefulWidget {
   @override
   _MyLoginState createState() => _MyLoginState();
@@ -18,9 +20,12 @@ class _MyLoginState extends State<MyLogin> {
 
     try {
       if(await _currentUser.loginUser(email, password)){
-        Navigator.of(context).push(
-          MaterialPageRoute (builder: (context)=>HomeScreen(),
-        ));
+        Navigator.pushAndRemoveUntil(
+            context, 
+            MaterialPageRoute(builder: (context)=> HomeScreen(),
+            ), 
+            (route) => false); 
+        
       }
      
       
