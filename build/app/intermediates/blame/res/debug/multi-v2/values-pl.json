@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "/home/zinou/Documents/GitHub/book-club-app/build/app/intermediates/incremental/mergeDebugResources/merged.dir/values-pl/values-pl.xml",
+            "outputFile": "/home/zinou/Documents/GitHub/book-club/build/app/intermediates/incremental/mergeDebugResources/merged.dir/values-pl/values-pl.xml",
             "map": [
                 {
                     "source": "/home/zinou/.gradle/caches/transforms-2/files-2.1/76027b02414a62945018b3d433655580/jetified-play-services-basement-17.0.0/res/values-pl/values.xml",

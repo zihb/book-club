@@ -12,8 +12,8 @@
 12         to allow setting breakpoints, to provide hot reload, etc.
 13    -->
 14    <uses-permission android:name="android.permission.INTERNET" />
-14-->/home/zinou/Documents/GitHub/book-club-app/android/app/src/debug/AndroidManifest.xml:6:5-66
-14-->/home/zinou/Documents/GitHub/book-club-app/android/app/src/debug/AndroidManifest.xml:6:22-64
+14-->/home/zinou/Documents/GitHub/book-club/android/app/src/debug/AndroidManifest.xml:6:5-66
+14-->/home/zinou/Documents/GitHub/book-club/android/app/src/debug/AndroidManifest.xml:6:22-64
 15    <!--
 16     io.flutter.app.FlutterApplication is an android.app.Application that
 17         calls FlutterMain.startInitialization(this); in its onCreate method.
@@ -22,30 +22,30 @@
 20         FlutterApplication and put your custom class here.
 21    -->
 22    <application
-22-->/home/zinou/Documents/GitHub/book-club-app/android/app/src/main/AndroidManifest.xml:8:5-46:19
+22-->/home/zinou/Documents/GitHub/book-club/android/app/src/main/AndroidManifest.xml:8:5-46:19
 23        android:name="io.flutter.app.FlutterApplication"
-23-->/home/zinou/Documents/GitHub/book-club-app/android/app/src/main/AndroidManifest.xml:9:9-57
+23-->/home/zinou/Documents/GitHub/book-club/android/app/src/main/AndroidManifest.xml:9:9-57
 24        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
 24-->[androidx.core:core:1.1.0] /home/zinou/.gradle/caches/transforms-2/files-2.1/3aaf6e5219b7f981ec263df919098c6f/core-1.1.0/AndroidManifest.xml:24:18-86
 25        android:debuggable="true"
 26        android:icon="@mipmap/ic_launcher"
-26-->/home/zinou/Documents/GitHub/book-club-app/android/app/src/main/AndroidManifest.xml:11:9-43
+26-->/home/zinou/Documents/GitHub/book-club/android/app/src/main/AndroidManifest.xml:11:9-43
 27        android:label="book_club_app" >
-27-->/home/zinou/Documents/GitHub/book-club-app/android/app/src/main/AndroidManifest.xml:10:9-38
+27-->/home/zinou/Documents/GitHub/book-club/android/app/src/main/AndroidManifest.xml:10:9-38
 28        <activity
-28-->/home/zinou/Documents/GitHub/book-club-app/android/app/src/main/AndroidManifest.xml:12:9-40:20
+28-->/home/zinou/Documents/GitHub/book-club/android/app/src/main/AndroidManifest.xml:12:9-40:20
 29            android:name="com.example.book_club_app.MainActivity"
-29-->/home/zinou/Documents/GitHub/book-club-app/android/app/src/main/AndroidManifest.xml:13:13-41
+29-->/home/zinou/Documents/GitHub/book-club/android/app/src/main/AndroidManifest.xml:13:13-41
 30            android:configChanges="orientation|keyboardHidden|keyboard|screenSize|smallestScreenSize|locale|layoutDirection|fontScale|screenLayout|density|uiMode"
-30-->/home/zinou/Documents/GitHub/book-club-app/android/app/src/main/AndroidManifest.xml:16:13-163
+30-->/home/zinou/Documents/GitHub/book-club/android/app/src/main/AndroidManifest.xml:16:13-163
 31            android:hardwareAccelerated="true"
-31-->/home/zinou/Documents/GitHub/book-club-app/android/app/src/main/AndroidManifest.xml:17:13-47
+31-->/home/zinou/Documents/GitHub/book-club/android/app/src/main/AndroidManifest.xml:17:13-47
 32            android:launchMode="singleTop"
-32-->/home/zinou/Documents/GitHub/book-club-app/android/app/src/main/AndroidManifest.xml:14:13-43
+32-->/home/zinou/Documents/GitHub/book-club/android/app/src/main/AndroidManifest.xml:14:13-43
 33            android:theme="@style/LaunchTheme"
-33-->/home/zinou/Documents/GitHub/book-club-app/android/app/src/main/AndroidManifest.xml:15:13-47
+33-->/home/zinou/Documents/GitHub/book-club/android/app/src/main/AndroidManifest.xml:15:13-47
 34            android:windowSoftInputMode="adjustResize" >
-34-->/home/zinou/Documents/GitHub/book-club-app/android/app/src/main/AndroidManifest.xml:18:13-55
+34-->/home/zinou/Documents/GitHub/book-club/android/app/src/main/AndroidManifest.xml:18:13-55
 35
 36            <!--
 37                 Specifies an Android theme to apply to this Activity as soon as
@@ -54,11 +54,11 @@
 40                 to determine the Window background behind the Flutter UI.
 41            -->
 42            <meta-data
-42-->/home/zinou/Documents/GitHub/book-club-app/android/app/src/main/AndroidManifest.xml:23:13-26:17
+42-->/home/zinou/Documents/GitHub/book-club/android/app/src/main/AndroidManifest.xml:23:13-26:17
 43                android:name="io.flutter.embedding.android.NormalTheme"
-43-->/home/zinou/Documents/GitHub/book-club-app/android/app/src/main/AndroidManifest.xml:24:15-70
+43-->/home/zinou/Documents/GitHub/book-club/android/app/src/main/AndroidManifest.xml:24:15-70
 44                android:resource="@style/NormalTheme" />
-44-->/home/zinou/Documents/GitHub/book-club-app/android/app/src/main/AndroidManifest.xml:25:15-52
+44-->/home/zinou/Documents/GitHub/book-club/android/app/src/main/AndroidManifest.xml:25:15-52
 45            <!--
 46                 Displays an Android View that continues showing the launch screen
 47                 Drawable until Flutter paints its first frame, then this splash
@@ -67,21 +67,21 @@
 50                 Flutter's first frame.
 51            -->
 52            <meta-data
-52-->/home/zinou/Documents/GitHub/book-club-app/android/app/src/main/AndroidManifest.xml:32:13-35:17
+52-->/home/zinou/Documents/GitHub/book-club/android/app/src/main/AndroidManifest.xml:32:13-35:17
 53                android:name="io.flutter.embedding.android.SplashScreenDrawable"
-53-->/home/zinou/Documents/GitHub/book-club-app/android/app/src/main/AndroidManifest.xml:33:15-79
+53-->/home/zinou/Documents/GitHub/book-club/android/app/src/main/AndroidManifest.xml:33:15-79
 54                android:resource="@drawable/launch_background" />
-54-->/home/zinou/Documents/GitHub/book-club-app/android/app/src/main/AndroidManifest.xml:34:15-61
+54-->/home/zinou/Documents/GitHub/book-club/android/app/src/main/AndroidManifest.xml:34:15-61
 55
 56            <intent-filter>
-56-->/home/zinou/Documents/GitHub/book-club-app/android/app/src/main/AndroidManifest.xml:36:13-39:29
+56-->/home/zinou/Documents/GitHub/book-club/android/app/src/main/AndroidManifest.xml:36:13-39:29
 57                <action android:name="android.intent.action.MAIN" />
-57-->/home/zinou/Documents/GitHub/book-club-app/android/app/src/main/AndroidManifest.xml:37:17-68
-57-->/home/zinou/Documents/GitHub/book-club-app/android/app/src/main/AndroidManifest.xml:37:25-66
+57-->/home/zinou/Documents/GitHub/book-club/android/app/src/main/AndroidManifest.xml:37:17-68
+57-->/home/zinou/Documents/GitHub/book-club/android/app/src/main/AndroidManifest.xml:37:25-66
 58
 59                <category android:name="android.intent.category.LAUNCHER" />
-59-->/home/zinou/Documents/GitHub/book-club-app/android/app/src/main/AndroidManifest.xml:38:17-76
-59-->/home/zinou/Documents/GitHub/book-club-app/android/app/src/main/AndroidManifest.xml:38:27-74
+59-->/home/zinou/Documents/GitHub/book-club/android/app/src/main/AndroidManifest.xml:38:17-76
+59-->/home/zinou/Documents/GitHub/book-club/android/app/src/main/AndroidManifest.xml:38:27-74
 60            </intent-filter>
 61        </activity>
 62        <!--
@@ -89,32 +89,32 @@
 64             This is used by the Flutter tool to generate GeneratedPluginRegistrant.java
 65        -->
 66        <meta-data
-66-->/home/zinou/Documents/GitHub/book-club-app/android/app/src/main/AndroidManifest.xml:43:9-45:33
+66-->/home/zinou/Documents/GitHub/book-club/android/app/src/main/AndroidManifest.xml:43:9-45:33
 67            android:name="flutterEmbedding"
-67-->/home/zinou/Documents/GitHub/book-club-app/android/app/src/main/AndroidManifest.xml:44:13-44
+67-->/home/zinou/Documents/GitHub/book-club/android/app/src/main/AndroidManifest.xml:44:13-44
 68            android:value="2" />
-68-->/home/zinou/Documents/GitHub/book-club-app/android/app/src/main/AndroidManifest.xml:45:13-30
+68-->/home/zinou/Documents/GitHub/book-club/android/app/src/main/AndroidManifest.xml:45:13-30
 69
 70        <service
-70-->[:firebase_auth] /home/zinou/Documents/GitHub/book-club-app/build/firebase_auth/intermediates/library_manifest/debug/AndroidManifest.xml:8:9-12:19
+70-->[:firebase_auth] /home/zinou/Documents/GitHub/book-club/build/firebase_auth/intermediates/library_manifest/debug/AndroidManifest.xml:8:9-12:19
 71            android:name="com.google.firebase.components.ComponentDiscoveryService"
-71-->[:firebase_auth] /home/zinou/Documents/GitHub/book-club-app/build/firebase_auth/intermediates/library_manifest/debug/AndroidManifest.xml:8:18-89
+71-->[:firebase_auth] /home/zinou/Documents/GitHub/book-club/build/firebase_auth/intermediates/library_manifest/debug/AndroidManifest.xml:8:18-89
 72            android:directBootAware="true"
 72-->[com.google.firebase:firebase-common:19.3.0] /home/zinou/.gradle/caches/transforms-2/files-2.1/32993a7cad32fb3ebe114ef511a08c86/jetified-firebase-common-19.3.0/AndroidManifest.xml:34:13-43
 73            android:exported="false" >
 73-->[com.google.firebase:firebase-auth:19.2.0] /home/zinou/.gradle/caches/transforms-2/files-2.1/a83bb62cb43b672cf00b874e0ee6110c/firebase-auth-19.2.0/AndroidManifest.xml:35:13-37
 74            <meta-data
-74-->[:firebase_auth] /home/zinou/Documents/GitHub/book-club-app/build/firebase_auth/intermediates/library_manifest/debug/AndroidManifest.xml:9:13-11:85
+74-->[:firebase_auth] /home/zinou/Documents/GitHub/book-club/build/firebase_auth/intermediates/library_manifest/debug/AndroidManifest.xml:9:13-11:85
 75                android:name="com.google.firebase.components:io.flutter.plugins.firebaseauth.FlutterFirebaseAppRegistrar"
-75-->[:firebase_auth] /home/zinou/Documents/GitHub/book-club-app/build/firebase_auth/intermediates/library_manifest/debug/AndroidManifest.xml:10:17-122
+75-->[:firebase_auth] /home/zinou/Documents/GitHub/book-club/build/firebase_auth/intermediates/library_manifest/debug/AndroidManifest.xml:10:17-122
 76                android:value="com.google.firebase.components.ComponentRegistrar" />
-76-->[:firebase_auth] /home/zinou/Documents/GitHub/book-club-app/build/firebase_auth/intermediates/library_manifest/debug/AndroidManifest.xml:11:17-82
+76-->[:firebase_auth] /home/zinou/Documents/GitHub/book-club/build/firebase_auth/intermediates/library_manifest/debug/AndroidManifest.xml:11:17-82
 77            <meta-data
-77-->[:firebase_core] /home/zinou/Documents/GitHub/book-club-app/build/firebase_core/intermediates/library_manifest/debug/AndroidManifest.xml:9:13-11:85
+77-->[:firebase_core] /home/zinou/Documents/GitHub/book-club/build/firebase_core/intermediates/library_manifest/debug/AndroidManifest.xml:9:13-11:85
 78                android:name="com.google.firebase.components:io.flutter.plugins.firebase.core.FlutterFirebaseAppRegistrar"
-78-->[:firebase_core] /home/zinou/Documents/GitHub/book-club-app/build/firebase_core/intermediates/library_manifest/debug/AndroidManifest.xml:10:17-123
+78-->[:firebase_core] /home/zinou/Documents/GitHub/book-club/build/firebase_core/intermediates/library_manifest/debug/AndroidManifest.xml:10:17-123
 79                android:value="com.google.firebase.components.ComponentRegistrar" />
-79-->[:firebase_core] /home/zinou/Documents/GitHub/book-club-app/build/firebase_core/intermediates/library_manifest/debug/AndroidManifest.xml:11:17-82
+79-->[:firebase_core] /home/zinou/Documents/GitHub/book-club/build/firebase_core/intermediates/library_manifest/debug/AndroidManifest.xml:11:17-82
 80            <meta-data
 80-->[com.google.firebase:firebase-auth:19.2.0] /home/zinou/.gradle/caches/transforms-2/files-2.1/a83bb62cb43b672cf00b874e0ee6110c/firebase-auth-19.2.0/AndroidManifest.xml:36:13-38:85
 81                android:name="com.google.firebase.components:com.google.firebase.auth.FirebaseAuthRegistrar"

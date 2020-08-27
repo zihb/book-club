@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "/home/zinou/Documents/GitHub/book-club-app/build/app/intermediates/incremental/mergeDebugResources/merged.dir/values-uk/values-uk.xml",
+            "outputFile": "/home/zinou/Documents/GitHub/book-club/build/app/intermediates/incremental/mergeDebugResources/merged.dir/values-uk/values-uk.xml",
             "map": [
                 {
                     "source": "/home/zinou/.gradle/caches/transforms-2/files-2.1/3aaf6e5219b7f981ec263df919098c6f/core-1.1.0/res/values-uk/values-uk.xml",

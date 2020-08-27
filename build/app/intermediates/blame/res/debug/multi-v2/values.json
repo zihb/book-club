@@ -1,23 +1,25 @@
 {
     "logs": [
         {
-            "outputFile": "/home/zinou/Documents/GitHub/book-club-app/build/app/intermediates/incremental/mergeDebugResources/merged.dir/values/values.xml",
+            "outputFile": "/home/zinou/Documents/GitHub/book-club/build/app/intermediates/incremental/mergeDebugResources/merged.dir/values/values.xml",
             "map": [
                 {
-                    "source": "/home/zinou/Documents/GitHub/book-club-app/build/app/generated/res/google-services/debug/values/values.xml",
+                    "source": "/home/zinou/Documents/GitHub/book-club/android/app/src/main/res/values/styles.xml",
                     "from": {
-                        "startLines": "2,3,4,5,6,7,8,9",
-                        "startColumns": "4,4,4,4,4,4,4,4",
-                        "startOffsets": "55,199,313,395,499,608,728,831",
-                        "endColumns": "143,113,81,103,108,119,102,79",
-                        "endOffsets": "194,308,390,494,603,723,826,906"
+                        "startLines": "3,14",
+                        "startColumns": "4,4",
+                        "startOffsets": "134,777",
+                        "endLines": "7,16",
+                        "endColumns": "12,12",
+                        "endOffsets": "426,937"
                     },
                     "to": {
-                        "startLines": "104,105,106,107,108,109,110,111",
-                        "startColumns": "4,4,4,4,4,4,4,4",
-                        "startOffsets": "7730,7874,7988,8070,8174,8283,8403,8506",
-                        "endColumns": "143,113,81,103,108,119,102,79",
-                        "endOffsets": "7869,7983,8065,8169,8278,8398,8501,8581"
+                        "startLines": "113,118",
+                        "startColumns": "4,4",
+                        "startOffsets": "8657,8954",
+                        "endLines": "117,120",
+                        "endColumns": "12,12",
+                        "endOffsets": "8949,9114"
                     }
                 },
                 {
@@ -76,22 +78,20 @@
                     }
                 },
                 {
-                    "source": "/home/zinou/Documents/GitHub/book-club-app/android/app/src/main/res/values/styles.xml",
+                    "source": "/home/zinou/Documents/GitHub/book-club/build/app/generated/res/google-services/debug/values/values.xml",
                     "from": {
-                        "startLines": "3,14",
-                        "startColumns": "4,4",
-                        "startOffsets": "134,777",
-                        "endLines": "7,16",
-                        "endColumns": "12,12",
-                        "endOffsets": "426,937"
+                        "startLines": "2,3,4,5,6,7,8,9",
+                        "startColumns": "4,4,4,4,4,4,4,4",
+                        "startOffsets": "55,199,313,395,499,608,728,831",
+                        "endColumns": "143,113,81,103,108,119,102,79",
+                        "endOffsets": "194,308,390,494,603,723,826,906"
                     },
                     "to": {
-                        "startLines": "113,118",
-                        "startColumns": "4,4",
-                        "startOffsets": "8657,8954",
-                        "endLines": "117,120",
-                        "endColumns": "12,12",
-                        "endOffsets": "8949,9114"
+                        "startLines": "104,105,106,107,108,109,110,111",
+                        "startColumns": "4,4,4,4,4,4,4,4",
+                        "startOffsets": "7730,7874,7988,8070,8174,8283,8403,8506",
+                        "endColumns": "143,113,81,103,108,119,102,79",
+                        "endOffsets": "7869,7983,8065,8169,8278,8398,8501,8581"
                     }
                 }
             ]
