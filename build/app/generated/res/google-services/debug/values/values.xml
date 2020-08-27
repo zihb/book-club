@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="default_web_client_id" translatable="false">984902143911-nft6g8kk4ukcp7v58bjebfeiejn6diqe.apps.googleusercontent.com</string>
+    <string name="firebase_database_url" translatable="false">https://book-club-app-7e559.firebaseio.com</string>
+    <string name="gcm_defaultSenderId" translatable="false">984902143911</string>
+    <string name="google_api_key" translatable="false">AIzaSyD67vuE3k7erIoQP_NPXeN4CkFTNsGRlWw</string>
+    <string name="google_app_id" translatable="false">1:984902143911:android:eea1db69b6f9411368f082</string>
+    <string name="google_crash_reporting_api_key" translatable="false">AIzaSyD67vuE3k7erIoQP_NPXeN4CkFTNsGRlWw</string>
+    <string name="google_storage_bucket" translatable="false">book-club-app-7e559.appspot.com</string>
+    <string name="project_id" translatable="false">book-club-app-7e559</string>
+</resources>
