@@ -1,18 +1,14 @@
 // this is authentication state
 
+import 'package:book_club_app/models/user.dart';
+import 'package:book_club_app/services/database.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/widgets.dart';
 
 class CurrentUser extends ChangeNotifier {
+MyUser _currentUser = MyUser();
 
-// define user id and email
-String _uid ;
-String _email;
-
-// accesor for uid and email
-
-String get getUid => _uid;
-String get getEmail => _email;
+MyUser get getCurrentUser => _currentUser;
 
 
 
@@ -25,8 +21,8 @@ Future<String> onStartup () async{
 
   try {
     FirebaseUser _firebaseuser = await _auth.currentUser();
-    _uid = _firebaseuser.uid;
-    _email= _firebaseuser.email;
+    _currentUser.uid = _firebaseuser.uid;
+    _currentUser.email= _firebaseuser.email;
     retVal = "success";
     
   } catch (e) {
@@ -41,8 +37,7 @@ Future<String> signOut() async{
 
   try {
     await _auth.signOut();
-    _uid = null;
-    _email= null;
+    _currentUser = MyUser();
     retVal = "success";
     
   } catch (e) {
@@ -52,21 +47,27 @@ Future<String> signOut() async{
   return retVal;
 }
 // sign up funtion
-Future<bool> signUpUser (String email , String password) async {
-  bool returnValue = false;
+Future<String> signUpUser (String email , String password,String fullname ) async {
+  String returnValue = "error";
+  MyUser _user = MyUser();
 
 try{
   
   AuthResult _authResult = await _auth.createUserWithEmailAndPassword(email: email, password: password);
-  if(_authResult.user !=null){
-   returnValue = true; 
+  _user.uid = _authResult.user.uid;
+  _user.email = _authResult.user.email;
+  _user.fullname = fullname;
+  String _retString = await MyDatabase().createUser(_user);
+
+  if(_retString=="success"){
+    returnValue="success";
   }
 }
 catch(e){
   print(e);
 }
 
-  return returnValue ;
+  return returnValue;
 }
 
 // login function
@@ -75,8 +76,8 @@ Future<bool> loginUser (String email , String password) async {
   try{
     AuthResult _authResult = await _auth.signInWithEmailAndPassword(email: email, password: password);
     if(_authResult.user!=null){
-      _uid = _authResult.user.uid;
-      _email = _authResult.user.email;
+      _currentUser.uid = _authResult.user.uid;
+      _currentUser.email = _authResult.user.email;
       returnValue=true;
     }
   }catch(e){print(e);

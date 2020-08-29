@@ -14,14 +14,15 @@ class _MySignUpState extends State<MySignUp> {
   TextEditingController _emailController = TextEditingController();
   TextEditingController _passwordController = TextEditingController();
 
-  void _signUpUser(String email, String password, BuildContext context) async {
+  void _signUpUser(String email, String password, BuildContext context,String fullname) async {
     CurrentUser _currentUser = Provider.of<CurrentUser>(context,listen: false);
 
     try {
-      if(await _currentUser.signUpUser(email, password)){
-  Navigator.of(context).push(
-          MaterialPageRoute (builder: (context)=>HomeScreen(),
-        ));      }
+      String _returnString = await _currentUser.signUpUser(email, password,fullname);
+      if(_returnString=="success"){
+        Navigator.pop(context); 
+      }
+ 
     } catch (e) {
       print(e);
     }
@@ -76,7 +77,7 @@ class _MySignUpState extends State<MySignUp> {
         minWidth: MediaQuery.of(context).size.width,
         padding: EdgeInsets.fromLTRB(20.0, 15.0, 20.0, 15.0),
         onPressed: () {
-          _signUpUser(_emailController.text,_passwordController.text,context);
+          _signUpUser(_emailController.text,_passwordController.text,context,_fullNameController.text);
                   },
                   child: Text("Sign Up",style:TextStyle(fontSize: 20.0,fontWeight: FontWeight.bold,color: Colors.white)),
                 ),      
