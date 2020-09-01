@@ -1,10 +1,20 @@
+import 'package:book_club_app/screens/createGroup/createGroup.dart';
+import 'package:book_club_app/screens/joinGroup/joinGroup.dart';
 import 'package:flutter/material.dart';
 
 class NoGroup extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    void _join(){}
-    void _create(){}
+    void _join(BuildContext context){
+      Navigator.push(context, MaterialPageRoute(
+        builder: (context) => JoinGroup(),
+         ),);
+    }
+    void _create(BuildContext context){
+      Navigator.push(context, MaterialPageRoute(
+        builder: (context) => CreateGroup(),
+         ),);
+    }
     return Scaffold(
       body: Column(children: <Widget>[
           Spacer(flex: 1,),
@@ -25,7 +35,7 @@ class NoGroup extends StatelessWidget {
           Padding(
             padding: const EdgeInsets.all(20.0),
             child: Text("since you are not in a book club , you can select either"
-            +"join a club or create a club",
+            +" join a club or create a club",
             textAlign: TextAlign.center,
             style:TextStyle(
               fontSize: 20.0,
@@ -43,7 +53,7 @@ class NoGroup extends StatelessWidget {
                   shape: RoundedRectangleBorder(
                   borderRadius: BorderRadius.circular(18.0),
                   ),
-                  onPressed: () =>_join(),
+                  onPressed: () =>_join(context),
                 ),
                 RaisedButton(
                   child: Text("Create"),
@@ -54,7 +64,7 @@ class NoGroup extends StatelessWidget {
                   width: 2,
                   )
                   ),
-                  onPressed: () =>_create(),
+                  onPressed: () =>_create(context),
                 ),
               ],),
           ),

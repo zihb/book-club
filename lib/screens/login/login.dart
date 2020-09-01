@@ -1,4 +1,5 @@
 import 'package:book_club_app/screens/home/home.dart';
+import 'package:book_club_app/screens/root/root.dart';
 import 'package:book_club_app/screens/signup/signup.dart';
 import 'package:book_club_app/states/currentUser.dart';
 import 'package:flutter/material.dart';
@@ -22,7 +23,7 @@ class _MyLoginState extends State<MyLogin> {
       if(await _currentUser.loginUser(email, password)){
         Navigator.pushAndRemoveUntil(
             context, 
-            MaterialPageRoute(builder: (context)=> HomeScreen(),
+            MaterialPageRoute(builder: (context)=> MyRoot(),
             ), 
             (route) => false); 
         
